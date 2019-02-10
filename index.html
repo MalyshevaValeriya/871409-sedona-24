@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
     	<a class="main-header-logo">
-    		<img src="img/index-logo.svg" width="368" height="153" alt="Логотип города Седона">
+    		<img src="img/logo.svg" width="140" height="72" alt="Логотип города Седона">
     	</a>
+    	<img src="img/welcome.svg" width="459" height="353" alt="Weclome">
       	<nav class="main-navigation">
          	<ul class="site-navigation">
          	 	<li><a href="info.html">ИНФОРМАЦИЯ</a></li>
@@ -93,25 +97,31 @@
     	<section class="search">
     		<h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
     		<p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-    		<p>Поиск гостиницы в Седоне</p>
+    		<a class="hotels-link" href="hotels.html">Поиск гостиницы в Седоне</a>
         	<form class="search" action="https://echo.htmlacademy.ru" method="get">
           		<p>
             		<label for="checkIn">Дата заезда</label>
             		<input id="checkIn" type="text" name="dateIn" value="" placeholder="24 апреля 2017">
+            		<button class="form-button" type="button">Календарь</button>
           		</p>
           		<p>
            			<label for="checkOut">Время</label>
             		<input id="checkOut" type="text" name="dateOut" value="" placeholder="4 июля 2017">
+            		<button class="form-button" type="button">Календарь</button>
           		</p>
           		<p>
-            		<label for="adult">Взрослые</label>
+          			<label for="adult">Взрослые</label>
+          			<button class="form-button" type="button">-</button>
             		<input id="adult" type="text" name="adultvalue" value="" placeholder="2">
+            		<button class="form-button" type="button">+</button>
           		</p>
           		<p>
             		<label for="child">Дети</label>
+            		<button class="form-button" type="button">-</button>
             		<input id="child" type="text" name="childvalue" value="" placeholder="5">
+            		<button class="form-button" type="button">+</button>
           		</p>
-          		<button class="button" type="submit">Найти</button>          
+          		<button class="submit-button" type="submit">Найти</button>          
         	</form> 
     		<img src="img/map.svg" width="368" height="153" alt="Карта Седоны">
     	</section>  
@@ -119,15 +129,16 @@
     <footer class="main-footer">
     	<a class="instagramm" href="a">#VISITSEDONA</a>
     	<div class="footer-social">
-    		<ul>
+    		<ul class="social-list">
         		<li><a class="social-button" href="#">Твиттер</a></li>
         		<li><a class="social-button" href="#">Фейсбук</a></li>
         		<li><a class="social-button" href="#">youtube</a></li>
         	</ul>        	     
       	</div>
-		<a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/academy-logo.svg" width="368" height="153" alt="Логотип HTML Academy">
-        </a> 
+      		<a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+      			<span>website by</span>
+          		<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+        	</a> 
     </footer>
   </body>
 </html>
