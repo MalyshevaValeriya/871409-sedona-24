@@ -8,26 +8,34 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-    	<a class="main-header-logo">
-    		<img src="img/logo.svg" width="140" height="72" alt="Логотип города Седона">
-    	</a>
-    	<img src="img/welcome.svg" width="459" height="353" alt="Weclome">
-      	<nav class="main-navigation">
-         	<ul class="site-navigation">
+    <header class="main-header container">
+    	<nav class="main-navigation ">
+         	<ul class="site-navigation site-navigation-left">
          	 	<li><a href="info.html">ИНФОРМАЦИЯ</a></li>
-         	 	<li><a href="photoandvideo.html">ФОТО И ВИДЕО</a></li>
+         	 	<li><a href="photoandvideo.html">ФОТО И ВИДЕО</a></li>    
+        	</ul>
+        	<a class="main-header-logo" href=#>
+    		<img src="img/logo.svg" width="140" height="72" alt="Логотип города Седона">
+    		</a>
+        	<ul class="site-navigation site-navigation-right">
         	  	<li><a href="map.html">КАРТА ШТАТА</a></li>
-          		<li><a href="hotels.html">ГОСТИНИЦЫ</a></li>                    
-        	</ul>       
-      	</nav>      
+          		<li><a href="hotels.html">ГОСТИНИЦЫ</a></li>
+          	</ul>	         	       
+      	</nav>
+      	     
     </header>
     <main class="container">
-    	<h1 class="visually-hidden">Город Седона</h1>
-    	<p>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</p>
-    	<P>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</P>
+    	<div class="main-welcome">
+    	<img src="img/welcome.svg" class="center-img" width="459" height="353" alt="Weclome">
+    	<!--<h1 class="visually-hidden">Город Седона</h1>-->
+    	<img src="img/polygon.svg" class="bot-img" width="1200" height="60" alt="Полигон">
+
+    	</div>
     	<section class="reasons">
-        	<h2 class="visually-hidden">5 причин</h2>
+    		<div class="main-wrapper">
+    			<p>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</p>
+    			<h2 class="visually-hidden">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</h2>
+    		</div>
         	<ul class="reasons-list">
           		<li>
           			<div>
@@ -95,9 +103,14 @@
         	</ul>
         </section>
     	<section class="search">
+    		<div class="hotels-search">
     		<h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
     		<p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+    		</div>
+    		<div class="hotels-search-map">
+    		<img src="img/map.png" alt="Карта Седоны">
     		<a class="hotels-link" href="hotels.html">Поиск гостиницы в Седоне</a>
+    		</div>
         	<form class="search" action="https://echo.htmlacademy.ru" method="get">
           		<p>
             		<label for="checkIn">Дата заезда</label>
@@ -123,11 +136,13 @@
           		</p>
           		<button class="submit-button" type="submit">Найти</button>          
         	</form> 
-    		<img src="img/map.svg" width="368" height="153" alt="Карта Седоны">
     	</section>  
     </main>
     <footer class="main-footer">
-    	<a class="instagramm" href="a">#VISITSEDONA</a>
+    	<div class="container">
+    	<div class="footer-instagramm">
+    		<a href="a">#VISITSEDONA</a>
+    	</div>
     	<div class="footer-social">
     		<ul class="social-list">
         		<li><a class="social-button" href="#">Твиттер</a></li>
@@ -135,10 +150,13 @@
         		<li><a class="social-button" href="#">youtube</a></li>
         	</ul>        	     
       	</div>
-      		<a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
-      			<span>website by</span>
-          		<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
-        	</a> 
+      	<div class="footer-copyright">
+	      	<a  href="https://htmlacademy.ru/intensive/htmlcss">
+	      		<span>website by</span>
+	          	<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+	        </a>
+        </div> 
+    	</div>
     </footer>
   </body>
 </html>
